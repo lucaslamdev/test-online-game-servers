@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Servidores Online</title>
+    <meta charset="utf-8" />
+    <style>
+      .centralizar-texto {
+        text-align: center;
+      }
+
+      #usocpu {
+        color: red;
+      }
+    </style>
+    {{ turbo() }}
+  </head>
+  <body>
+    <div>
+      <h1 class="centralizar-texto">Servidores Online</h1>
+      <h4>Minecraft: <a id="minecraft">{{ minecraft }}</a></h4>
+      <h4>Terraria: <a id="terraria">{{ terraria }}</a></h4>
+      <h4>Minecraft com Mods: <a id="minecraftmods"> {{ minecraftmods }}</a></h4>
+      <h4>Ping: <a id="ping">{{ ms }}</a>ms</h4>
+      <h4>Uso CPU: <a id="usocpu">{{ usocpu }}</a>%</h4>
+    </div>
+  </body>
+</html>
