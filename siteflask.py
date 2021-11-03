@@ -70,4 +70,4 @@ def before_first_request():
     threading.Thread(target=atualizar_dados).start()
 
 
-app.run(debug=True, port=8080)
+app.run(debug=True, host="0.0.0.0", port=8080)
