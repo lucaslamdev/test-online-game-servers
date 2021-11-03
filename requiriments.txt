@@ -1,6 +1,4 @@
 ping3
-threading
 psutil
-turbo_flask
 flask
-socket
+turbo_flask
