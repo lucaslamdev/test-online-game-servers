@@ -10,8 +10,10 @@ def minecraft():
     try:
       s.connect(('127.0.0.1', 25565))
       s.shutdown(1)
+      s.close()
       return True
     except:
+      s.close()
       return False
 
 def terraria():
@@ -19,8 +21,10 @@ def terraria():
     try:
       s.connect(('127.0.0.1', 7777))
       s.shutdown(1)
+      s.close()
       return True
     except:
+      s.close()
       return False
 
 def minecraftmods():
@@ -28,6 +32,8 @@ def minecraftmods():
     try:
       s.connect(('127.0.0.1', 25465))
       s.shutdown(1)
+      s.close()
       return True
     except:
+      s.close()
       return False
